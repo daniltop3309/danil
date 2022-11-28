@@ -11,7 +11,7 @@ def index(request):
     """)
 
 def error(request):
-    return HttpResponse("К сожалению произошла ошибка: (", status=400, reason='error')
+    return HttpResponse("К сожалению произошла ошибка:(", status=400, reason='error')
 
-def user(request, login='Ruzilya', folder="hello ", post="0"):
+def user(request, login='qwerty', folder="qwerty", post="0"):
     return HttpResponse(f"<h2>Login: {login} Folder: {folder} Post: {post}")
